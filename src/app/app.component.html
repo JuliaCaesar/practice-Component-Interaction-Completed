@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Parent Component (AppComponent)</h3>
+      <input type="text" class="form-control w-75" [(ngModel)]="pText" />
+      <p>This is the message from the Child:{{ receivedChildMessage }}</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <app-childcomponent
+              [inputText]="pText"
+              (outputEvent)="receiveMessage($event)"
+            ></app-childcomponent>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

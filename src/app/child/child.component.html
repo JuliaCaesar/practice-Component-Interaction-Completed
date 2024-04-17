@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Child Component</h3>
+    <div class="card-body">
+      <p>
+        This is the message received from the Parent:
+        <span>{{ inputText }}</span>
+      </p>
+      <div>
+        <input type="text" class="form-control w-75" [(ngModel)]="message" />
+      </div>
+      <div>
+        <button class="btn btn-primary" (click)="sendMessage()">
+          Send Message!
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

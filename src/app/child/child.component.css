@@ -1,0 +1,13 @@
+.card {
+  background-color: bisque;
+  margin: auto;
+}
+
+div {
+  margin: 5px;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
